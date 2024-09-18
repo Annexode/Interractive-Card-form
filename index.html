@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>Annexode the cODEr | Interactive card details form</title>
+  </head>
+  <body class="bg-slate-900">
+    <div class="h-[704px]" id="container">
+      <div
+        class="bg-white w-[375px] relative overflow-hidden xl:grid grid-cols-[480px_960px] xl:w-[1440px] xl:h-[900px] xl:overflow-hidden"
+      >
+        <div id="header">
+          <div>
+            <div>
+              <img
+                class="xl:h-[900px]"
+                src="./images/bg-main-mobile.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div>
+            <div class="absolute mt-7 w-72 top-0 mr-4 right-[0px] xl:top-[430px] xl:left-[300px] xl:w-96" id="back">
+              <img src="./images/bg-card-back.png" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="w-72 absolute right-0 top-0 mt-[117px] mr-[70px] xl:top-[100px] xl:left-[220px] xl:w-96"
+              id="front"
+            >
+              <img src="./images/bg-card-front.png" alt="" />
+              <div
+                class="text-white -mt-20 font-normal text-xl text-center tracking-widest xl:tracking-[7px]"
+              >
+                <h1>0000 0000 0000 0000</h1>
+                <div class="flex justify-between">
+                  <div class="text-white text-[10px] mt-3 ml-8">
+                    <h1>JANE APPLESEED</h1>
+                  </div>
+                  <div class="text-white text-[10px] mt-3 mr-8">
+                    <h1>00/00</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="w-12 -mt-32 ml-[30px]">
+                <img src="./images/card-logo.svg" alt="The logo of the card" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mt-20 p-2 xl:relative xl:top-[200px] xl:left-[300px]">
+            <form>
+              <div class="flex flex-col ml-4 mb-5">
+                <label class="uppercase font-bold text-[12px] mb-1" for="names"
+                  >Cardholder Name</label
+                >
+                <div>
+                  <input
+                    class="w-[330px] border-[1px] border-gray-400 pt-2 pb-2 pl-2 rounded-md mt-1"
+                    placeholder="e.g. Jane Appleseed"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col ml-4 mb-5">
+                <label class="uppercase font-bold text-[12px] mb-1" for="names"
+                  >card number</label
+                >
+                <div>
+                  <input
+                    class="w-[330px] border-[1px] border-gray-400 pt-2 pb-2 pl-2 rounded-md mt-1"
+                    placeholder="e.g. 1234 5678 9123 0000"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="flex" id="expiry-limits-cvc">
+                <div class="flex flex-col ml-4 mb-4">
+                  <label
+                    class="uppercase font-bold text-[12px] mb-1"
+                    for="names"
+                    >exp. date</label
+                  >
+                  <div>
+                    <input
+                      class="w-[60px] border-[1px] border-gray-400 pt-2 pb-2 pl-2 rounded-md mt-1"
+                      placeholder="MM"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col ml-4 mb-4">
+                  <label
+                    class="uppercase font-bold text-[12px] mb-1"
+                    for="names"
+                    >(MM/YY)</label
+                  >
+                  <div>
+                    <input
+                      class="w-[70px] border-[1px] border-gray-400 pt-2 pb-2 pl-2 rounded-md mt-1"
+                      placeholder="YY"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col ml-4 mb-4">
+                  <label
+                    class="uppercase font-bold text-[12px] mb-1"
+                    for="names"
+                    >CVC</label
+                  >
+                  <div>
+                    <input
+                      class="w-[165px] border-[1px] border-gray-400 pt-2 pb-2 pl-2 rounded-md mt-1"
+                      placeholder="e.g. 123"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div
+              class="bg-darkviolet-0 w-[330px] pt-3 pb-3 rounded-md mt-5 flex justify-center ml-[14px]"
+            >
+              <button>
+                <a class="text-white font-medium" href="#">Confirm</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+  </body>
+</html>
